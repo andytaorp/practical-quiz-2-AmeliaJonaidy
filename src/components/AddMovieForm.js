@@ -10,7 +10,7 @@ export default function AddMovieForm({ onAddMovie }) {
     // TODO: write code to handle form submission
     e.preventDefault();
 
-    if (!title) return;
+    if (!title.trim()) return;
     
     const newTitle = {
       id: Date.now(),
